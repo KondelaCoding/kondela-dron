@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #ffc102;
+
+  --background-color: #444444;
+
+  --primary-text: #eeeeee;
+  --secondary-text: #222222;
+
+  --primary-gradient: linear-gradient(160deg, #ffc102 0%, #ffdd78 100%);
+
+  font-family: "Broadway", sans-serif;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.btn {
+  @apply bg-[var(--primary-color)] text-[var(--secondary-text)] py-3 px-10 font-bold text-xl hover:bg-[image:var(--primary-gradient)] active:opacity-80 flex;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4;
+}
+
+@keyframes drone {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
