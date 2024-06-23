@@ -4,8 +4,9 @@
 
 :root {
   --primary-color: #ffc102;
+  --secondary-color: #121214;
 
-  --background-color: #444444;
+  --background-color: var(--secondary-color);
 
   --primary-text: #eeeeee;
   --secondary-text: #222222;
@@ -35,7 +36,7 @@ body {
 }
 
 .btn {
-  @apply bg-[var(--primary-color)] text-[var(--secondary-text)] py-3 px-10 font-bold text-xl hover:bg-[image:var(--primary-gradient)] active:opacity-80 flex;
+  @apply bg-[var(--primary-color)] text-[var(--secondary-text)] py-3 px-10 font-semibold text-xl hover:bg-[image:var(--primary-gradient)] active:opacity-80 flex font-outfit items-center gap-3;
 }
 
 .container {
