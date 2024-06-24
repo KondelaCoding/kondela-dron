@@ -10,7 +10,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className={`${isAnimating ? "animate-fadeIn" : ""}`}>
+    <div className={`${isAnimating ? "animate-fadeIn" : "hidden"}`}>
       <Navbar />
       <div className="bg-[var(--secondary-color)] h-[100vh] text-white">
         <div className={`${isAnimating ? "animate-fadeIn" : ""}`}>
